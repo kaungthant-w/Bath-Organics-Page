@@ -11,10 +11,56 @@
     --primary-light : rgb(219, 87, 126);
 }
 
+::placeholder {
+    color: var(--primary-darkness);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    /* background-color: antiquewhite; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 200;
+}
+
+.floating-circle {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-light);
+    position: fixed;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1400;
+    color: #fff;
+    
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    z-index: 1500;
+    position: fixed;
+    display: none;
+
+}
+
+.menu {
+    display: none;
+    color: var(--primary-light);
+    font-size: 2rem;
+    position: fixed;
+    right: 0.6rem;
+    z-index: 2000;
+    cursor: pointer;
+    top: 1.5rem;
+    right: 2rem;
 }
 
 .nav {
@@ -23,29 +69,28 @@ body {
     color: var(--primary-light);
     display: flex;
     justify-content: space-between;
+    z-index: -20;
 }
 
 .leftNav {
     font-size: 1rem;
+    margin-top: 0.8rem;
 }
 
 .nav_link {
     color: var(--primary-light);
     font-weight: 600;
-}
-
-.nav_link {
     margin-right: 2rem;
 }
 
 .nav_btn {
     background-color: var(--primary-dark);
     padding: 0.5rem;
-    padding-top: 0.8rem;
+    padding-top: 0.85rem;
     width: 3rem;
     height: 3rem;
     display: inline-block;
-    color: rgb(189, 189, 189);
+    color: rgb(236, 231, 231);
     border-radius: 50%;
     font-size: 1rem;
     text-align: center;
@@ -82,6 +127,7 @@ body {
 
 .heroSection {
     height: 20rem;
+    width: 100%;
     background-image: linear-gradient(to top, rgba(250, 250, 250, 0.4), rgba(163, 162, 160, 0.3)) ,url(./img/bg-hero.png);
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -113,6 +159,7 @@ body {
 
 .suggestion {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
     padding: 1rem;
@@ -125,6 +172,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+    width: 33.33%;
 }
 
 .suggestion_num {
@@ -145,10 +193,8 @@ body {
 }
 
 .smoothiesSection {
-
     margin-top: 3rem;
     padding: 2.4rem;
-    /* background-color: rgb(206, 73, 73); */
 }
 
 .smoothiesSection-head {
@@ -176,7 +222,7 @@ body {
 .smoothiesSection-title {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--primary-darkness);
     transform: translateY(1rem);
 }
@@ -211,4 +257,315 @@ body {
     gap: 2rem;
     align-items: start;
     margin: 2rem 0;
+}
+
+.signupSection {
+    margin-bottom: 5rem;
+    text-align: center;
+    color: var(--primary-darkness);
+}
+
+.signupSection-head {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.signupSection-head span {
+    display: block;
+}
+
+.signupSection-input {
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--primary-darkness);
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    width: 20%;
+}
+
+.signupSection span {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu-item {
+    list-style: none;
+}
+
+.footer-menu-item {
+    margin-right: 2rem;
+}
+
+.footer-menu-item a {
+    color: var(--primary-darkness);
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+
+.social-icon {
+    margin-bottom: 1.6rem;
+}
+
+.social-icon .bx {
+    font-size: 2rem;
+    color: var(--primary-darkness);
+    font-weight: 900;
+}
+
+
+@media (max-width:910px) {
+
+    .heroSection {
+        height: 20rem;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .heroSection .h3 {
+        font-size: 2.5rem;
+        margin-top: 5rem;
+    }
+
+    .centerNav_logo {
+        order: 3;
+    }
+
+    .centerNav .centerNav_logo {
+        font-size: 1rem;
+    }
+
+    .rightNav {
+        order: 2;
+
+        margin-top: 0.6rem;
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+
+    .leftNav {
+        order: 1;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav_link {
+        margin-right: 0.5rem;
+    }
+
+    .nav_btn {
+        background-color: var(--primary-dark);
+        padding: 0.5rem;
+        padding-top: 0.4rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .suggestion_flex {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    .suggestion_num {
+        font-size: 4rem;
+    }
+
+    .suggestion_content_title {
+        font-size: 1.05rem;
+    }
+
+    .smoothiesSection {
+        margin-top: 1rem;
+    }
+
+    .signupSection {
+        margin-top: 1rem;
+    }
+
+    .signupSection-input {
+        padding: 0.6rem;
+        font-size: 0.5rem;
+        letter-spacing: 0.06rem;
+    }
+
+    .smoothiesSection-head {
+        font-size: 2rem;
+    }
+
+    .smoothiesSection-title {
+        font-size: 1rem;
+    }
+
+    .signupSection-head {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:640px) {
+
+    body {
+        width: 100%;
+    }
+
+    .nav {
+    padding: 1.4rem 0rem;
+    justify-content: space-between;
+    background-color: rgba(206, 200, 200, 0.8);
+    width: 100%;
+    height: 18rem;
+    z-index: 1600;
+    position: fixed;
+    display: none;
+
+    transition: all 2s;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .centerNav {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        display: block;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+    }
+
+    .centerNav .centerNav_logo {
+        margin-left: 2rem;
+    }
+    
+    .rightNav, .leftNav {
+        z-index: 1700;
+        position: fixed;
+        line-height: 1.6rem;
+    }
+    
+    .rightNav {
+        right: 2rem;
+        top: 5.6rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav_btn {
+        display: none;
+    }
+
+    .leftNav {
+        right: 1.5rem;
+        top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroSection {
+        margin: 0;
+        margin-left: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .heroSection .h3 {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    .heroSection .text {
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .suggestion {
+        margin-left:0;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 3rem;
+    }
+
+    .smoothiesSection {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .smoothiesSection-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        margin: 1rem 0;
+    }
+
+    .mylkSection-container {
+        margin: 1rem 0;
+    }
+
+    .suggestion_num {
+        font-size: 3rem;
+    }
+
+    .suggestion_flex {
+        width: 100%;
+        padding: 0;
+    }
+
+    .suggestion_content_title {
+        font-size: 1rem;
+    }
+
+    .smoothiesSection-head {
+        font-size: 1.4rem;
+    }
+
+    .smoothiesSection-title {
+        font-size: 1rem;
+    }
+
+    .suggestion_content_para {
+        width: 100%;
+    }
+
+    .signupSection-head {
+        font-size: 2rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .signupSection-input {
+        border-bottom: 1.4px solid var(--primary-darkness);
+        width: 40%;
+    }
+
+    .footer-menu-item {
+        line-height: 2rem;
+    }
 }

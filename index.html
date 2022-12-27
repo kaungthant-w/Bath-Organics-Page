@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bath Organics</title>
     <link rel="stylesheet" href="style.css">
+    <!-- boxicons link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
 </head>
-<body>
-    <nav class="nav">
+<body style="max-width: 1960px; margin:auto;" id="home">
+    <div class="overlay" id="overlay"></div>
+    <div class="menu" id="menu">
+        <i class='bx bx-menu' ></i>
+    </div>
+    <nav class="nav" id="nav">
         <div class="leftNav">
             <a href="#" class="nav_link">Create a Box</a>
             <a href="#" class="nav_link">For Business</a>
@@ -22,7 +28,9 @@
             <a href="#" class="nav_link">Cart</a>
             <a href="#" class="nav_link nav_btn">0</a>
         </div>
+        
     </nav>
+    <a id="floatingCircle" class="floating-circle" href="#home">&uarr;</a>
     <section class="heroSection">
         <h1 class="h3">plant power</h1>
         <p class="text">flash frozen smoothies + breakfasts, deliverer to your door</p>
@@ -54,7 +62,7 @@
     <section class="smoothiesSection">
         <h2 class="smoothiesSection-head">organic smoothies</h2>
         <div class="smoothiesSection-container">
-            <div class="smoothiesSection-card">
+            <div class="smoothiesSection-card" id="organicId">
                 <h2 class="smoothiesSection-title">pineapple & coconut</h2>
                 <img class="smoothiesSection-img" src="./img/1.png" alt="">
                 <button class="smoothiesSection-btn">create a box</button>
@@ -129,7 +137,27 @@
             </div>
         </div>
     </section>
-    <section class="signupSection"></section>
-    <footer></footer>
+    <section class="signupSection">
+        <h2 class="signupSection-head" for="id">sign up for news <span>& special offers</span></h2>
+        <input type="email" name="email" class="signupSection-input" id="email" placeholder="EMAIL ADDRESS">
+        <span> &rarr; </span>
+    </section>
+    <footer class="footer">
+        <div class="social-icon">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram' ></i>
+        </div>
+        <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="#">Contact</a></li>
+            <li class="footer-menu-item"><a href="#">FAQs</a></li>
+            <li class="footer-menu-item"><a href="#">About</a></li>
+            <li class="footer-menu-item"><a href="#">Terms</a></li>
+            <li class="footer-menu-item"><a href="#">Privacy</a></li>
+            <li class="footer-menu-item"><a href="#">&copy;Batch Organics Ltd.</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
