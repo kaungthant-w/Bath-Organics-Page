@@ -203,3 +203,12 @@ body {
     background-color: var(--primary-dark);
 
 }
+
+
+.mylkSection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
+}
