@@ -6,6 +6,7 @@
 }
 
 :root {
+    --primary-darkness : rgb(230, 32, 92);
     --primary-dark : rgb(235, 31, 92);
     --primary-light : rgb(219, 87, 126);
 }
@@ -30,6 +31,7 @@ body {
 
 .nav_link {
     color: var(--primary-light);
+    font-weight: 600;
 }
 
 .nav_link {
@@ -71,6 +73,7 @@ body {
     color: var(--primary-dark);
     text-align: center;
     font-weight: 900;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .centerNav .centerNav_logo_block {
@@ -125,7 +128,7 @@ body {
 }
 
 .suggestion_num {
-    font-size: 3.4rem;
+    font-size: 5rem;
     margin-right: 1rem;
 }
 
@@ -141,3 +144,62 @@ body {
     color: var(--primary-light);
 }
 
+.smoothiesSection {
+
+    margin-top: 3rem;
+    padding: 2.4rem;
+    /* background-color: rgb(206, 73, 73); */
+}
+
+.smoothiesSection-head {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+}
+
+.smoothiesSection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
+}
+
+.smoothiesSection-card {
+    width: 100%;
+    position: relative;
+    height: 24rem;
+    background-color: rgb(247, 239, 239);
+}
+
+.smoothiesSection-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: var(--primary-darkness);
+    transform: translateY(1rem);
+}
+
+.smoothiesSection-img {
+    width: 100%;
+    object-fit: contain;
+    height: 20rem;
+
+}
+
+.smoothiesSection-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    /* transform: translateY(-1.2rem); */
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    background-color: var(--primary-dark);
+
+}
