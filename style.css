@@ -63,6 +63,7 @@ body {
     right: 2rem;
 }
 
+
 .nav {
     padding: 1.4rem 3rem;
     margin-bottom: 0.2rem;
@@ -429,16 +430,19 @@ body {
     height: 18rem;
     z-index: 1600;
     position: fixed;
-    display: none;
-
     transition: all 2s;
+    display: none;
     }
 
-    .show {
+    .hidden {
         display: block;
     }
 
     .menu {
+        display: block;
+    }
+
+    .open-menu {
         display: block;
     }
 
@@ -452,10 +456,6 @@ body {
     .btn {
         padding: 1rem 2rem;
     }
-
-    /* .centerNav .centerNav_logo {
-        margin-left: 2rem;
-    } */
     
     .rightNav, .leftNav {
         z-index: 1700;
