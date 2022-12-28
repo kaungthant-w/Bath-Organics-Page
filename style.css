@@ -99,7 +99,7 @@ body {
     width: 3rem;
     height: 3rem;
     display: inline-block;
-    color: rgb(189, 182, 182);
+    color: rgb(221, 215, 215);
     border-radius: 50%;
     font-size: 1rem;
     text-align: center;
@@ -165,7 +165,7 @@ body {
 }
 
 .heroSection:hover {
-    filter: brightness(90%);
+    filter: brightness(95%);
 }
 
 .h3 {
@@ -252,6 +252,10 @@ body {
     background-color: rgb(247, 239, 239);
 }
 
+.smoothiesSection-card:hover {
+    background-color: rgba(235, 207, 207, 0.616);;
+}
+
 .smoothiesSection-head:hover {
     color: var(--primary-light);
 }
@@ -275,7 +279,7 @@ body {
 
 .smoothiesSection-img:hover {
     filter: contrast(120%);
-    filter: brightness(90%);
+    filter: brightness(60%);
 }
 
 .smoothiesSection-btn {
@@ -553,7 +557,7 @@ body {
 
     .heroSection .h3 {
         font-size: 2rem;
-        margin-top: 6rem;
+        margin-top: 8rem;
     }
 
     .heroSection .text {
@@ -594,6 +598,12 @@ body {
 
     .suggestion_content_title {
         font-size: 1rem;
+        margin-bottom: 0.3rem;
+        font-weight: 900;
+    }
+
+    .suggestion_content_para {
+        font-size: small;
     }
 
     .smoothiesSection-head {
@@ -602,6 +612,7 @@ body {
 
     .smoothiesSection-title {
         font-size: 1rem;
+        margin-left: 1rem;
     }
 
     .suggestion_content_para {
