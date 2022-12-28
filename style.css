@@ -38,7 +38,12 @@ body {
     bottom: 2rem;
     z-index: 1400;
     color: #fff;
+    transition: all 0.2s;
     
+}
+
+.floating-circle:hover {
+    background-color: var(--primary-darkness);
 }
 
 .overlay {
@@ -63,7 +68,6 @@ body {
     right: 2rem;
 }
 
-
 .nav {
     padding: 1.4rem 3rem;
     margin-bottom: 0.2rem;
@@ -84,17 +88,26 @@ body {
     margin-right: 2rem;
 }
 
+.nav_link:hover {
+    color: var(--primary-dark);
+}
+
 .nav_btn {
-    background-color: var(--primary-dark);
+    background-color: var(--primary-light);
     padding: 0.5rem;
     padding-top: 0.85rem;
     width: 3rem;
     height: 3rem;
     display: inline-block;
-    color: rgb(236, 231, 231);
+    color: rgb(189, 182, 182);
     border-radius: 50%;
     font-size: 1rem;
     text-align: center;
+}
+
+.nav_btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--primary-darkness);
 }
 
 .btn {
@@ -104,6 +117,12 @@ body {
     padding: 1.3rem 3rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--primary-light);
+    color: rgb(231, 220, 220);
 }
 
 .centerNav {
@@ -120,6 +139,9 @@ body {
     text-align: center;
     font-weight: 900;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.centerNav .centerNav_logo:hover {
+    color: var(--primary-light);
 }
 
 .centerNav .centerNav_logo_block {
@@ -138,6 +160,12 @@ body {
     align-items: center;
     margin: 0 2rem;
     padding-top: 1.6rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.heroSection:hover {
+    filter: brightness(90%);
 }
 
 .h3 {
@@ -145,6 +173,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-dark);
+}
+
+.heroSection .h3:hover {
+    color:var(--primary-light);
 }
 
 .text {
@@ -216,8 +248,12 @@ body {
 .smoothiesSection-card {
     width: 100%;
     position: relative;
-    height: 24rem;
+    height: 22rem;
     background-color: rgb(247, 239, 239);
+}
+
+.smoothiesSection-head:hover {
+    color: var(--primary-light);
 }
 
 .smoothiesSection-title {
@@ -231,8 +267,15 @@ body {
 .smoothiesSection-img {
     width: 100%;
     object-fit: contain;
-    height: 20rem;
+    height: 18rem;
+    cursor: pointer;
+    transition: all 0.3s;
 
+}
+
+.smoothiesSection-img:hover {
+    filter: contrast(120%);
+    filter: brightness(90%);
 }
 
 .smoothiesSection-btn {
@@ -248,7 +291,12 @@ body {
     bottom: 0;
     border: none;
     background-color: var(--primary-dark);
+    transition: all 0.2s linear;
 
+}
+
+.smoothiesSection-btn:hover {
+    background-color: var(--primary-light);
 }
 
 
@@ -269,6 +317,10 @@ body {
 .signupSection-head {
     font-size: 3rem;
     text-transform: uppercase;
+}
+
+.signupSection-head:hover {
+    color: var(--primary-light);
 }
 
 .signupSection-head span {
@@ -318,6 +370,10 @@ body {
     
 }
 
+.footer-menu-item a:hover {
+    color: var(--primary-light);
+}
+
 .social-icon {
     margin-bottom: 1.6rem;
 }
@@ -326,6 +382,11 @@ body {
     font-size: 2rem;
     color: var(--primary-darkness);
     font-weight: 900;
+    cursor: pointer;
+}
+
+.social-icon .bx:hover {
+    color: var(--primary-light);
 }
 
 
@@ -414,6 +475,7 @@ body {
     .signupSection-head {
         font-size: 2rem;
     }
+
 }
 
 @media (max-width:640px) {
