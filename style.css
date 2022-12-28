@@ -278,8 +278,7 @@ body {
 }
 
 .smoothiesSection-img:hover {
-    filter: contrast(120%);
-    filter: brightness(60%);
+    filter: contrast(120%) brightness(105%);
 }
 
 .smoothiesSection-btn {
